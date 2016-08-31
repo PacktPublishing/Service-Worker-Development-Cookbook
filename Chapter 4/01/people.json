@@ -1,0 +1,28 @@
+{
+  "users":[
+    {
+      "framework": "Ember",
+      "person":{
+        "firstName": "Yehuda",
+        "lastName": "Katz"
+      },
+      "twitter": "wycats"
+    },
+    {
+      "framework": "React",
+      "person":{
+        "firstName": "Jordan",
+        "lastName": "Walke"
+      },
+      "twitter": "jordwalke"
+    },
+    {
+      "framework": "Angular",
+      "person":{
+        "firstName": "Miško",
+        "lastName": "Hevery"
+      },
+      "twitter": "mhevery"
+    }
+  ]
+}

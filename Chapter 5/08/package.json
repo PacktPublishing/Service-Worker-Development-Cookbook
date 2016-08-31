@@ -1,0 +1,23 @@
+{
+  "name": "service-worker-immediate-claim",
+  "version": "1.0.0",
+  "description": "Service worker immediate claim demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "service worker",
+    "swig",
+    "express"
+  ],
+  "author": "Sean Amarasinghe",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "request": "^2.72.0",
+    "swig": "^1.4.2"
+  }
+}

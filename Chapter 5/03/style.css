@@ -1,0 +1,77 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 350px;
+  border: 1px solid #4CAF50;
+  padding: 20px;
+  border-radius: 5px;
+  width: 350px;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #4CAF50;
+}
+
+img {
+  padding: 20px 0;
+  max-width: 200px;
+}
+
+.hidden {
+  display: none;
+}
+
+#registration-status {
+  background-color: #FFE454;
+  padding: 10px;
+}
+
+#selection {
+  border: 2px solid #44BFCE;
+  padding: 3px;
+  border-radius: 5px;
+  max-width: 350px;
+  margin: 10px auto;
+}
+
+#configuration {
+  background-color: #4CAF50;
+  padding: 3px;
+  border-radius: 5px;
+  max-width: 350px;
+  color: #FFF;
+  margin: 10px auto;
+}
+
+#results {
+  background-color: #02000A;
+  padding: 20px;
+  border-radius: 5px;
+  width: 350px;
+  max-width: 850px;
+  color: #4CAF50;
+  margin: 10px auto;
+  min-height: 50px;
+  text-align: left;
+}
+
+#uninstall {
+  width: 300px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 0;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  background-color: #FFD55C;
+}

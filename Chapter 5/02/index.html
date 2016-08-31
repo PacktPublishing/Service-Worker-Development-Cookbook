@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Caching Content from ZIP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="registration-status">
+    <p>Registration status: <strong id="status"></strong></p>
+    <input type="button" id="resetButton" value="Reset" />
+  </section>
+  <section id="install-notice">
+    <h1>Simulate: Install/Uninstall App - Caching Content from ZIP</h1>
+    Please enable logs from service workers
+    <button id="install">Install</button>
+  </section>
+
+  <section id="logos" hidden>
+    <div id="selection">
+      <p>Select logo: </p>
+      <select>
+        <option value="images/adobe-logo.png">Adobe</option>
+        <option value="images/amazon-logo.png">Amazon</option>
+        <option value="images/apple-logo.png">Apple</option>
+        <option value="images/facebook-logo.png">Facebook</option>
+      </select>
+      <button id="load-image">Load</button>
+      <div>
+        <img src="images/placeholder.png" alt="logo" />
+      </div>
+    </div>
+    <div id="notification">
+      <h2>Go Offline</h2>
+      <p>Click to uninstall</p>
+      <button id="uninstall">Uninstall</button>
+    </div>
+
+  </section>
+
+  <pre id="results"></pre>
+  <script src="index.js"></script>
+</body>
+</html>

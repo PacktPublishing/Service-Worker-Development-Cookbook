@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dependency Injector</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="registration-status">
+      <p>Registration status: <strong id="status"></strong></p>
+      <input type="button" id="resetButton" value="Reset" />
+    </section>
+    <section id="actions">
+      <h1>Environment Switch</h1>
+      <p>
+        <a href="#production">Production</a>&nbsp;|&nbsp;
+        <a href="#development">Development</a>
+      </p>
+      <p>
+        <button id="alert">Alert</button>
+        <button id="confirm">Confirm</button>
+        <button id="prompt">Prompt</button>
+      </p>
+    </section>
+    <script src="index.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="utils/dialogs" defer></script>
+    <script src="controller" defer></script>
+  </body>
+</html>

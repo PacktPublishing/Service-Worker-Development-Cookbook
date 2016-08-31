@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Load balancer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="registration-status">
+    <p>Registration status: <strong id="status"></strong></p>
+    <input type="button" id="resetButton" value="Reset" />
+  </section>
+  <section id="logos">
+    <div id="selection">
+      <p>Select logo: </p>
+      <select id="image-selection" disabled>
+        <option value="images/adobe-logo.png">Adobe</option>
+        <option value="images/amazon-logo.png">Amazon</option>
+        <option value="images/apple-logo.png">Apple</option>
+        <option value="images/facebook-logo.png">Facebook</option>
+      </select>
+      <div>
+        <img src="images/placeholder.png" alt="logo" />
+      </div>
+    </div>
+  </section>
+  <section id="configuration">
+    <p>Content provider configuartion.</p>
+    <p>Servers set to: <span id="server-label"></span></p>
+    <form id="load-configuration">
+      <p>
+        <label>Server 1 <input type="number" id="load-1" min="0" max="100" value="25" disabled /> %</label>
+      </p>
+      <p>
+        <label>Server 2 <input type="number" id="load-2" min="0" max="100" value="65" disabled /> %</label>
+      </p>
+      <p>
+        <label>Server 3 <input type="number" id="load-3" min="0" max="100" value="15" disabled /> %</label>
+      </p>
+      <input type="submit" value="Reset" />
+    </form>
+  <section>
+  <script src="./index.js"></script>
+</body>
+</html>

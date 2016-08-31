@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Immediate Claim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="registration-status">
+    <p>Registration status: <strong id="status"></strong></p>
+    <input type="button" id="resetButton" value="Reset" />
+  </section>
+
+  <section id="stats">
+    <p><strong>Version: </strong><span id="version"></span></p>
+    <div>
+      <img src="./placeholder.png" id="picture" width="200" height="100">
+    </div>
+
+    <button id="update">Update ServiceWorker</button>
+
+    <div>
+      <div class="event"><strong>onLoad:</strong> <span id="onload">Pending …</span></div>
+      <div class="event"><strong>Registered:</strong> <span id="register">Nothing registered</span></div>
+      <div class="event"><strong>onControllerchange:</strong> <span id="oncontrollerchange">Not fired</span></div>
+    </div>
+
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>

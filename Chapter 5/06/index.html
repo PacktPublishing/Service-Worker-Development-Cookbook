@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cache First, then Network</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="registration-status">
+    <p>Registration status: <strong id="status"></strong></p>
+    <input type="button" id="resetButton" value="Reset" />
+  </section>
+  <h1>TODOS</h1>
+  <section id="todo-area">
+    <form id="add-form">
+      <input type="text" id="new-todo" placeholder="Add a task here"/>
+      <input type="text" id="priority" placeholder="Priority"/>
+      <input type="submit" value="Add" />
+    </form>
+    <table id="todos">
+    </table>
+    <footer class="footer">
+		</footer>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
