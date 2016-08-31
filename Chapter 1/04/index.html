@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Timeouts</title>
+</head>
+<body>
+  <p>Registration status: <strong id="status"></strong></p>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register(
+        'service-worker.js',
+        { scope: './' }
+      ).then(function(serviceWorker) {
+        document.getElementById('status').innerHTML = 'successful';
+    } else {
+      document.getElementById('status').innerHTML = 'unavailable';
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+</body>
+</html>
