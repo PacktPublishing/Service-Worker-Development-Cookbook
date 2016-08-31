@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fetching Offline Resources</title>
+    <style>
+      .error {
+        color: #FF0000;
+      }
+      .success {
+        color: #00FF00;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Images</h1>
+      <div id="https-acao-image"></div>
+      <div id="https-image"></div>
+      <div id="http-image"></div>
+    </section>
+
+    <section>
+      <h1>HTTPS Fetch</h1>
+      <div id="https-cors">
+        <strong>https-cors</strong>
+      </div>
+      <div id="https-no-cors">
+        <strong>https-no-cors</strong>
+      </div>
+      <div id="https-acao-cors">
+        <strong>https-acao-cors</strong>
+      </div>
+      <div id="https-acao-no-cors">
+        <strong>https-acao-no-cors</strong>
+      </div>
+      <div id="service-https-cors">
+        <strong>service-https-cors</strong>
+      </div>
+      <div id="service-http-cors">
+        <strong>service-http-cors</strong>
+      </div>
+      <div id="service-http-no-cors">
+        <strong>service-http-no-cors</strong>
+      </div>
+    </section>
+
+    <section>
+      <h1>HTTP Fetch</h1>
+      <div id="http-cors">
+        <strong>http-cors</strong>
+      </div>
+      <div id="http-no-cors">
+        <strong>http-no-cors</strong>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

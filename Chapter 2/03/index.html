@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Offline CSS</title>
+  <link rel="stylesheet" href="style-2.css">
+  <link rel="stylesheet" href="style-1.css">
+</head>
+<body>
+  <p>Registration status: <strong id="status"></strong></p>
+
+  <script async>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register(
+        'service-worker.js',
+        { scope: './' }
+      ).then( function(serviceWorker) {
+        document.getElementById('status').innerHTML = 'successful';
+      }).catch(function(error) {
+        document.getElementById('status').innerHTML = error;
+      });
+    } else {
+        document.getElementById('status').innerHTML = 'unavailable';
+      }
+  </script>
+</body>
+</html>

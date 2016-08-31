@@ -1,0 +1,56 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 350px;
+  border: 1px solid #4CAF50;
+  padding: 20px;
+  border-radius: 5px;
+  width: 350px;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #4CAF50;
+}
+
+img {
+  padding: 20px 0;
+  max-width: 200px;
+}
+
+.success {
+  color: #4CAF50;
+  font-size: 2em;
+}
+
+.fail {
+  color: #FF8401;
+  font-size: 1.5em;
+}
+
+.hidden {
+  display: none;
+}
+
+#registration-status {
+  background-color: #FFE454;
+  padding: 10px;
+}
+
+#notification {
+  background-color: #4CAF50;
+  padding: 3px;
+  border-radius: 5px;
+  max-width: 350px;
+  color: #FFF;
+}

@@ -1,0 +1,103 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 350px;
+  border: 1px solid #4CAF50;
+  padding: 20px;
+  border-radius: 5px;
+  width: 350px;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #FFF;
+  background-color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+img {
+  padding: 20px 0;
+  max-width: 200px;
+}
+
+.hidden {
+  display: none;
+}
+
+#registration-status {
+  background-color: #FFE454;
+  padding: 10px;
+}
+
+#article-area {
+  margin: 0 auto;
+}
+
+form {
+  background: #F05266;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 50%;
+ }
+
+ form label {
+   padding-right: 20px;
+ }
+
+ form input[type=submit] {
+   padding: 8px;
+    display: inline-block;
+    border: 0;
+    top: -2px;
+    position: relative;
+    background-color: #eee;
+ }
+
+ #new-bookmark {
+  width: 60%;
+  height: 30px;
+  font-size: 1.1em;
+ }
+
+ #articles {
+   width: 50%;
+   margin: 0 auto;
+   padding-left: 0;
+   text-align: left;
+ }
+
+ #articles ul {
+   padding: 10px 0;
+ }
+
+ #articles li {
+   list-style: none;
+   background: #eee;
+   padding: 10px;
+   position: relative;
+   border: 1px solid #F05266;
+   border-top: 0;
+ }
+
+ .done {
+   content: '✔';
+   color: #F05266;
+   position: absolute;
+   right: 10px;
+   border: 1px solid #F05266;
+   background-color: transparent;
+ }
+</style>

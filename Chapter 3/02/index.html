@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cache First, then Network</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="events">
+    <h1><span class="nyc">NYC</span> Events TONIGHT</h1>
+    <aside>
+      <img src="hypecal.png" />
+      <h2>Source</h2>
+      <section>
+        <h3>Network</h3>
+        <input type="checkbox" name="network" id="network-disabled-checkbox">
+        <label for="network">Disabled</label><br />
+        <h3>Cache</h3>
+        <input type="checkbox" name="cache" id="cache-disabled-checkbox">
+        <label for="cache">Disabled</label><br />
+      </section>
+      <h2>Delay</h2>
+      <section>
+        <h3>Network</h3>
+        <input type="text" name="network-delay" id="network-delay" value="400" /> ms
+        <h3>Cache</h3>
+        <input type="text" name="cache-delay" id="cache-delay" value="1000" /> ms
+      </section>
+    <input type="button" id="fetch-btn" value="FETCH" />
+  </aside>
+  <section class="data connection">
+    <table>
+      <tr>
+        <td><strong>Network</strong></td>
+        <td><output id='network-status'></output></td>
+      </tr>
+      <tr>
+        <td><strong>Cache</strong></td>
+        <td><output id='cache-status'></output><td>
+      </tr>
+    </table>
+  </section>
+  <section class="data detail">
+    <output id="data"></output>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>

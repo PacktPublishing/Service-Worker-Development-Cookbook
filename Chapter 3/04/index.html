@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Using window.caches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="registration-status">
+    <p>Registration status: <strong id="status"></strong></p>
+    <input type="button" id="resetButton" value="Reset" />
+  </section>
+  <section id="article-area">
+    <h1>Bookmark App</h1>
+    <form action="#" method="post">
+      <div>
+        <label for="new-bookmark">+Add Bookmark</label>
+        <input type="text" name="new-bookmark" id="new-bookmark" placeholder="new bookmark">
+        <input type="submit" value="Add">
+      </div>
+    </form>
+    <ul id="articles"></ul>
+    <div id="bookmark-status"></div>
+  </section>
+  <script src="index.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
