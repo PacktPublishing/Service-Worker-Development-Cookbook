@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rich Push Notifications</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <section id="registration-status">
+    <p>Registration status: <strong id="status"></strong></p>
+    <input type="button" id="resetButton" value="Reset" />
+  </section>
+  <section id="notification-input">
+    <form>
+      <h1>Notification</h1>
+      Delay Time&nbsp;<input id='notification-delay' type='number' value='2'></input> <small>s</small><br/>
+      <br/>
+      Active Time&nbsp;<input id='notification-ttl' type='number' value='0'></input> <small>s</small><br/>
+      <br/>
+    </form>
+    </form>
+    <button id="send">Send Notification!</button>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testing waitUntil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="registration-status">
+    <p>Registration status: <strong id="status"></strong></p>
+    <input type="button" id="resetButton" value="Reset" />
+  </section>
+
+  <script>
+    var scope = {
+      scope: './'
+    };
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js', scope)
+      .then(
+        function(serviceWorker) {
+        printStatus('successful');
+      }).catch(function(error) {
+        printStatus(error);
+      });
+    } else {
+      printStatus('unavailable');
+    }
+
+    function printStatus(status) {
+      document.getElementById('status').innerHTML = status;
+    }
+  </script>
+</body>
+</html>

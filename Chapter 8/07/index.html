@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Push Quota</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <section id="registration-status">
+    <p>Registration status: <strong id="status"></strong></p>
+    <input type="button" id="resetButton" value="Reset" />
+  </section>
+  <section id="notification-input">
+    <ul>
+      <li>Select <strong>Visible notifications</strong> - They will appear one after another on your screen. The quota will not be enforced;</li>
+      <li>Select <strong>Invisible notifications</strong> -  They won't appear on your screen, but the number at the bottom of the page will updat once the page is re-opened, to indicate the number of invisible notifications sent before reaching the quota.</li>
+    </ul>
+
+    <form>
+    Notifications to send: <input id="notification-count" type="number" value="30"></input>
+    </form>
+
+    <button id="visible">Visible notifications</button>
+    <button id="invisible">Invisible notifications</button>
+
+    <p>Received <span id="sent-visible">0</span> visible notifications<br />
+    Received <span id="sent-invisible">0</span> invisible notifications</p>
+<button id="clear">Clear</button>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>

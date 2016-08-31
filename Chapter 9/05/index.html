@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Flowchart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="registration-status">
+    <p>Registration status: <strong id="status"></strong></p>
+    <input type="button" id="resetButton" value="Reset" />
+  </section>
+  <section class="playground">
+		<div class="inputs">
+			<span class="title">Service Worker</span>
+		  <input id="swscripturl" placeholder="SW path" value="./service-worker.js" />
+		  <span class="title">Options </span>
+		  <input id="swscope" placeholder="scope (optional)" />
+		</div>
+		<div class="actions">
+				<button id="swinstall" disabled>Register specified SW</button>
+		    <button id="reloadapp">Reload document</button>
+		    <button id="swuninstall" disabled>Unregister active SW</button>
+		</div>
+	  <div id="log" class="log"></div>
+  </section>
+  <script src="index.js"></script>
+  <script src="logger.js"></script>
+  <script src="service-worker-util.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

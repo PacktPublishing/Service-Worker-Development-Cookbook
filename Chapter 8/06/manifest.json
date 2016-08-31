@@ -1,0 +1,8 @@
+{
+  "name": "SW Push Notification Subscription Management",
+  "short_name": "push-with_subscription",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "gcm_sender_id": "46143029380",
+  "gcm_user_visible_only": true
+}
