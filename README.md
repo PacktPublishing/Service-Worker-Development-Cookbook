@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781786465290)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 # Service Worker Development Cookbook
 
 [Service Worker Development Cookbook] (https://www.packtpub.com/application-development/service-worker-development-cookbook?utm_source=github&utm_medium=respository&utm_campaign=9781786465290) enables you to build highly available and performant native web applications that seamlessly integrate with third-party APIs. Web developers, mobile application developers, and software engineers with any level of knowledge can use this book. You should be familiar with JavaScript and HTML.
